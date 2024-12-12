@@ -33,6 +33,4 @@ Normalement le projet contient tous les scripts nécessaires pour le build et le
 
 - Dans settings de votre repository, activez les github pages et choisissez la branche `gh-pages` comme source.
 
-## Rendu
-
-Créer un dépot git public et envoyer le lien par mail à l'adresse sur communit.
+## Rendusssss
