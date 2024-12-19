@@ -66,7 +66,7 @@ export default function App() {
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
-            <div className="mt-6 p-4">
+            <div className="mt-6 pb-20 px-4">
               <button className="mt-8 text-2xl bg-white text-red-700 border-4 border-red-800 w-full px-10 py-5 rounded-full shadow hover:bg-gray-100 transition font-poppins uppercase font-bold  " onClick={distributeGifts}>
                 C'est parti !
               </button>
@@ -75,11 +75,8 @@ export default function App() {
         )}
         {currentScreen === "assignments" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Attributions des cadeaux
-            </h2>
             <AssignmentDisplay assignments={assignments} />
-            <div className="mt-6">
+            <div className="mt-8 text-2xl bg-white text-red-700 border-4 border-red-800 w-full px-10 py-5 rounded-full shadow hover:bg-gray-100 transition font-poppins uppercase font-bold">
               <button className="button w-full" onClick={resetApp}>
                 Recommencer
               </button>

@@ -3,7 +3,7 @@
 
 export function WelcomeScreen({ onStart }) {
   return (
-    <div className="h-screen bg-green-700 flex flex-col p-4">
+    <div className="h-screen bg-green-700 flex flex-col">
       {/* Première moitié */}
       <div className="flex flex-col justify-end items-center h-1/2 w-full">
         {/* Image SVG alignée en bas */}
@@ -17,7 +17,7 @@ export function WelcomeScreen({ onStart }) {
       </div>
 
       {/* Deuxième moitié */}
-      <div className="flex flex-col items-center justify-between h-1/2">
+      <div className="flex flex-col items-center justify-between h-1/2 pb-20 px-4">
         <h1 className="text-5xl text-white font-modak text-center"> Secret Santa 
         start now !</h1>
         <button
