@@ -25,7 +25,7 @@ export function ParticipantInput({
       </div>
       <div className={`absolute top-0 right-0 w-2/3 h-full bg-white grid grid-rows-7 transition-transform duration-500 py-10 ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
         <div className="row-span-1 flex flex-col justify-start items-center w-full mt-8 gap-5">
-          <img src="./Members.svg" alt="" className="w-1/2"/>
+          <img src="/Members.svg" alt="" className="w-1/2"/>
           <p className="text-5xl text-black font-modak">John Doe</p>
         </div>
         <nav className="row-span-5 flex justify-center items-center">
