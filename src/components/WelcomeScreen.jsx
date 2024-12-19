@@ -3,15 +3,31 @@
 
 export function WelcomeScreen({ onStart }) {
   return (
-    <div className="text-center space-y-6">
-      <h1 className="text-4xl font-bold text-primary">Secret Santa</h1>
-      <p className="text-lg">
-        Bienvenue dans l'application Secret Santa ! Organisez facilement votre
-        échange de cadeaux entre amis ou collègues.
-      </p>
-      <button onClick={onStart} className="button text-lg px-8 py-3">
-        Commencer
-      </button>
+    <div className="min-h-screen bg-green-700 flex flex-col p-4">
+      {/* Première moitié */}
+      <div className="flex flex-col justify-end items-center h-1/2 w-full">
+        {/* Image SVG alignée en bas */}
+        <div className="w-32 h-32 bg-gray-300 rounded flex items-center justify-center">
+          <img
+            src="./PapaNoel.svg"
+            alt="Papa Noel"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Deuxième moitié */}
+      <div className="flex flex-col items-center justify-center h-1/2 w-full">
+        <h1 className="text-4xl font-bold text-white">Secret Santa</h1>
+        <button
+          onClick={onStart}
+          className="mt-8 bg-white text-green-700 font-bold text-lg px-8 py-3 rounded shadow hover:bg-gray-100 transition"
+        >
+          Commencer
+        </button>
+      </div>
     </div>
+
+
   );
 }
