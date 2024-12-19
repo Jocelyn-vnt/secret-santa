@@ -52,8 +52,8 @@ export default function App() {
 
   return (
     
-    <div className="container mx-auto">
-      <div>
+    <div className="container mx-auto ">
+      <div className="flex flex-col h-screen bg-gradient-to-b from-red-900 to-red-700 ">
         {/* // affiche l'écran en fonction de l'état de l'application // WELCOME */}
         {currentScreen === "welcome" && (
           <WelcomeScreen onStart={() => setCurrentScreen("input")} />
@@ -66,9 +66,9 @@ export default function App() {
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
-            <div className="mt-6">
-              <button className="button w-full" onClick={distributeGifts}>
-                Distribuer les cadeaux
+            <div className="mt-6 p-4">
+              <button className="mt-8 text-2xl bg-white text-red-700 border-4 border-red-800 w-full px-10 py-5 rounded-full shadow hover:bg-gray-100 transition font-poppins uppercase font-bold  " onClick={distributeGifts}>
+                C'est parti !
               </button>
             </div>
           </>
